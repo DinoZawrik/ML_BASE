@@ -1,0 +1,1022 @@
+<!DOCTYPE html><html><head>
+      <title>11</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\79103\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.15\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<p>Отлично, вижу твой энтузиазм! 👍  Теперь, когда у нас есть простой график, давай научимся делать его <strong>более информативным и красивым</strong>!  Ведь просто линия на пустом фоне не всегда достаточно понятна.</p>
+<p><strong>Настройка элементов графика в Matplotlib</strong> – это как добавление деталей и красок к твоему рисунку.  Мы можем добавить:</p>
+<ul>
+<li><strong>Заголовок графика (Title):</strong>  Чтобы сказать зрителю, что именно изображено на графике.</li>
+<li><strong>Подписи к осям (Axis labels):</strong>  Чтобы указать, какие величины отложены по осям X и Y, и в каких единицах измерения.</li>
+<li><strong>Цвет и стиль линии (Line color and style):</strong>  Чтобы сделать график более выразительным и различимым.</li>
+</ul>
+<p><strong>1. Добавление заголовка и подписей осей:</strong></p>
+<p>Matplotlib предоставляет простые функции для добавления заголовка и подписей к осям:</p>
+<ul>
+<li>
+<p><strong><code>plt.title('Заголовок графика')</code>:</strong>  Добавляет <strong>заголовок</strong> к текущему графику.  В кавычках нужно указать текст заголовка.</p>
+</li>
+<li>
+<p><strong><code>plt.xlabel('Подпись оси X')</code>:</strong>  Добавляет <strong>подпись к оси X</strong>.  В кавычках нужно указать текст подписи.</p>
+</li>
+<li>
+<p><strong><code>plt.ylabel('Подпись оси Y')</code>:</strong>  Добавляет <strong>подпись к оси Y</strong>.  В кавычках нужно указать текст подписи.</p>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Возьмем наш предыдущий код и добавим заголовок и подписи к осям:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+x_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+y_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x_values<span class="token punctuation">,</span> y_values<span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Зависимость Y от X'</span><span class="token punctuation">)</span> <span class="token comment"># Добавляем заголовок</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Значения X'</span><span class="token punctuation">)</span> <span class="token comment"># Добавляем подпись к оси X</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Значения Y'</span><span class="token punctuation">)</span> <span class="token comment"># Добавляем подпись к оси Y</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что изменилось?  Теперь у графика должен быть заголовок "Зависимость Y от X", подпись "Значения X" под осью X и подпись "Значения Y" слева от оси Y.  График стал гораздо понятнее!</li>
+</ol>
+<p><strong>2. Настройка цвета и стиля линии:</strong></p>
+<p>Функция <code>plt.plot()</code> позволяет настраивать <strong>цвет и стиль линии</strong> прямо в момент построения графика, с помощью <strong>дополнительных аргументов</strong>.</p>
+<ul>
+<li>
+<p><strong><code>color='цвет'</code>:</strong>  Задает <strong>цвет линии</strong>.  Цвет можно задавать разными способами, но пока давай использовать <strong>названия цветов</strong> (например, <code>'red'</code>, <code>'blue'</code>, <code>'green'</code>, <code>'black'</code>, <code>'purple'</code>, <code>'orange'</code>, <code>'cyan'</code>, <code>'magenta'</code>, <code>'yellow'</code>, <code>'lime'</code>, <code>'teal'</code>, <code>'olive'</code>, <code>'maroon'</code>, <code>'navy'</code>, <code>'fuchsia'</code>, <code>'silver'</code>, <code>'gray'</code>).</p>
+</li>
+<li>
+<p><strong><code>linestyle='стиль'</code> или сокращенно <code>ls='стиль'</code>:</strong>  Задает <strong>стиль линии</strong>.  Основные стили:</p>
+<ul>
+<li><code>'-'</code> или <code>'solid'</code> – <strong>сплошная линия</strong> (по умолчанию).</li>
+<li><code>'--'</code> или <code>'dashed'</code> – <strong>пунктирная линия</strong>.</li>
+<li><code>':'</code> или <code>'dotted'</code> – <strong>точечная линия</strong>.</li>
+<li><code>'-.'</code> или <code>'dashdot'</code> – <strong>штрих-пунктирная линия</strong>.</li>
+<li><code>''</code> или <code>'None'</code> – <strong>без линии</strong> (только точки, если есть маркеры).</li>
+</ul>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Давай изменим цвет линии на красный и сделаем ее пунктирной:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+x_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+y_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>plot<span class="token punctuation">(</span>x_values<span class="token punctuation">,</span> y_values<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'red'</span><span class="token punctuation">,</span> linestyle<span class="token operator">=</span><span class="token string">'--'</span><span class="token punctuation">)</span> <span class="token comment"># Задаем цвет 'red' и стиль '--'</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Зависимость Y от X (красная пунктирная линия)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Значения X'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Значения Y'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Теперь линия графика должна быть <strong>красной и пунктирной</strong>.  Попробуй менять значения <code>color</code> и <code>linestyle</code> на другие, чтобы поэкспериментировать с разными вариантами.  Например:
+<ul>
+<li><code>color='blue', linestyle=':'</code> (синяя точечная линия)</li>
+<li><code>color='green', linestyle='-.'</code> (зеленая штрих-пунктирная линия)</li>
+<li><code>color='purple', linestyle='-'</code> (фиолетовая сплошная линия)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Возьми код своего первого графика (<code>plt.plot(x_values, y_values)</code>)</strong>.</li>
+<li><strong>Добавь к нему:</strong>
+<ul>
+<li>Заголовок графика на русском языке (любой, подходящий по смыслу).</li>
+<li>Подпись к оси X "Ось абсцисс".</li>
+<li>Подпись к оси Y "Ось ординат".</li>
+<li>Измени цвет линии на <strong>зеленый</strong>.</li>
+<li>Сделай линию <strong>штрих-пунктирной</strong>.</li>
+</ul>
+</li>
+</ol>
+<p>Запусти код и убедись, что все изменения применились к графику.  Поэкспериментируй с разными цветами и стилями линий.</p>
+<p>После выполнения задания, обсудим результаты и перейдем к следующей теме - <strong>точечным диаграммам (scatter plots)</strong>.  Как тебе такой план?  И есть ли вопросы по настройке заголовка, подписей осей, цвета и стиля линии?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Отлично!  Раз ты готов двигаться дальше, то переходим к <strong>точечным диаграммам (scatter plots)</strong>! 📌</p>
+<p><strong>Точечные диаграммы</strong> – это еще один очень важный и распространенный тип графиков в визуализации данных.  В отличие от линейных графиков, которые показывают <strong>линию тренда</strong> или <strong>зависимость</strong> между переменными, <strong>точечные диаграммы показывают отдельные точки данных</strong>.</p>
+<p><strong>Когда используются точечные диаграммы?</strong></p>
+<ul>
+<li><strong>Для исследования взаимосвязи между двумя переменными:</strong>  Точечные диаграммы отлично подходят для визуализации того, как одна переменная меняется в зависимости от другой.  Можно увидеть, есть ли какая-то закономерность, тренд, или точки распределены случайно.</li>
+<li><strong>Для выявления кластеров и выбросов:</strong>  На точечной диаграмме часто хорошо видны группы точек (кластеры) и точки, которые сильно отличаются от остальных (выбросы).</li>
+<li><strong>Когда важны отдельные точки данных:</strong>  В отличие от линейных графиков, где линия как бы "сглаживает" данные, точечные диаграммы показывают каждую точку данных индивидуально, что может быть важно, если каждая точка представляет собой отдельное наблюдение или событие.</li>
+<li><strong>Для визуализации многомерных данных (в сочетании с цветом и размером точек):</strong>  Точечные диаграммы можно использовать для отображения не только двух, но и большего количества переменных, если использовать цвет, размер и форму точек для кодирования дополнительных измерений.</li>
+</ul>
+<p><strong>Как создать точечную диаграмму в Matplotlib?</strong></p>
+<p>Для создания точечных диаграмм в Matplotlib используется функция <strong><code>plt.scatter()</code></strong>.</p>
+<p><strong>Основной синтаксис <code>plt.scatter(x, y, ...)</code>:</strong></p>
+<ul>
+<li><strong><code>x</code></strong> –  <strong>Данные для оси X</strong> (как и в <code>plt.plot()</code>).  Это может быть список, NumPy массив или Pandas Series.</li>
+<li><strong><code>y</code></strong> –  <strong>Данные для оси Y</strong> (как и в <code>plt.plot()</code>).  Должны быть той же длины, что и <code>x</code>.</li>
+<li><strong>Дополнительные аргументы (параметры):</strong>  Позволяют настроить внешний вид точек: цвет, размер, форму маркера и т.д.  Мы рассмотрим некоторые из них ниже.</li>
+</ul>
+<p><strong>Простейшая точечная диаграмма:</strong></p>
+<p>Возьмем те же данные <code>x_values</code> и <code>y_values</code>, что и для линейного графика, и построим точечную диаграмму:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+x_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+y_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x_values<span class="token punctuation">,</span> y_values<span class="token punctuation">)</span> <span class="token comment"># Функция scatter() строит точечную диаграмму</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Точечная диаграмма зависимости Y от X'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Значения X'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Значения Y'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что ты видишь?  Теперь вместо линии ты должен увидеть <strong>набор точек</strong>, расположенных в соответствии с координатами (x, y).  Форма точек по умолчанию – кружки.</li>
+</ol>
+<p><strong>Настройка внешнего вида точек в <code>plt.scatter()</code>:</strong></p>
+<p>Функция <code>plt.scatter()</code> предоставляет множество параметров для настройки внешнего вида точек.  Рассмотрим основные:</p>
+<ul>
+<li>
+<p><strong><code>marker='маркер'</code>:</strong>  Задает <strong>форму маркера</strong> (точки).  Основные маркеры:</p>
+<ul>
+<li><code>'o'</code> – <strong>кружок</strong> (по умолчанию).</li>
+<li><code>'.'</code> – <strong>точка</strong>.</li>
+<li><code>','</code> – <strong>пиксель</strong>.</li>
+<li><code>'x'</code> – <strong>крестик</strong>.</li>
+<li><code>'+'</code> – <strong>плюс</strong>.</li>
+<li><code>'*'</code> – <strong>звездочка</strong>.</li>
+<li><code>'s'</code> – <strong>квадрат</strong>.</li>
+<li><code>'d'</code> – <strong>ромб</strong>.</li>
+<li><code>'^'</code> – <strong>треугольник вверх</strong>.</li>
+<li><code>'v'</code> – <strong>треугольник вниз</strong>.</li>
+<li><code>&lt;</code> – <strong>треугольник влево</strong>.</li>
+<li><code>'&gt;'</code> – <strong>треугольник вправо</strong>.</li>
+<li><code>'p'</code> – <strong>пятиугольник</strong>.</li>
+<li><code>'h'</code> – <strong>шестиугольник 1</strong>.</li>
+<li><code>'H'</code> – <strong>шестиугольник 2</strong>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>s=размер</code>:</strong>  Задает <strong>размер маркера</strong> в <strong>пунктах в квадрате</strong>.  Чем больше число, тем больше размер точек.</p>
+</li>
+<li>
+<p><strong><code>c=цвет</code> или <code>color=цвет</code>:</strong>  Задает <strong>цвет маркера</strong>.  Цвет можно задавать так же, как и для линий в <code>plt.plot()</code> (названия цветов, HEX-коды, RGB-значения и т.д.).</p>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Давай изменим форму маркера на крестик, увеличим размер точек и сделаем их зелеными:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+x_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+y_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x_values<span class="token punctuation">,</span> y_values<span class="token punctuation">,</span> marker<span class="token operator">=</span><span class="token string">'x'</span><span class="token punctuation">,</span> s<span class="token operator">=</span><span class="token number">100</span><span class="token punctuation">,</span> c<span class="token operator">=</span><span class="token string">'green'</span><span class="token punctuation">)</span> <span class="token comment"># Задаем маркер 'x', размер 100, цвет 'green'</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Точечная диаграмма (крестики, зеленые, большие)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Значения X'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Значения Y'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Теперь точки должны быть в виде <strong>зеленых крестиков</strong> большего размера.  Попробуй менять значения <code>marker</code>, <code>s</code> и <code>c</code> на другие, чтобы поэкспериментировать с разными вариантами.  Например:
+<ul>
+<li><code>marker='o', s=50, c='blue'</code> (синие кружки среднего размера)</li>
+<li><code>marker='*', s=200, c='red'</code> (красные звездочки большого размера)</li>
+<li><code>marker='^', s=75, c='magenta'</code> (фиолетовые треугольники среднего размера)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Возьми код своей простой точечной диаграммы (<code>plt.scatter(x_values, y_values)</code>)</strong>.</li>
+<li><strong>Добавь к ней:</strong>
+<ul>
+<li>Заголовок графика на русском языке (любой, подходящий по смыслу).</li>
+<li>Подписи к осям X и Y (на твой выбор).</li>
+<li>Измени форму маркера на <strong>ромб</strong> (<code>'d'</code>).</li>
+<li>Установи размер маркера <strong>150</strong>.</li>
+<li>Измени цвет маркера на <strong>оранжевый</strong> (<code>'orange'</code>).</li>
+</ul>
+</li>
+</ol>
+<p>Запусти код и убедись, что все изменения применились к графику.  Поэкспериментируй с разными маркерами, размерами и цветами.</p>
+<p>После выполнения задания, обсудим результаты и перейдем к следующей теме - <strong>столбчатым диаграммам (bar charts)</strong>.  Как тебе такой план?  И есть ли вопросы по точечным диаграммам и их настройке?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Великолепно!  Точечные диаграммы освоены – это еще один важный инструмент в твоем арсенале визуализации! 👍</p>
+<p>Прежде чем мы перейдем к столбчатым диаграммам, давай на секунду остановимся и <strong>осознаем, что мы уже умеем делать в Matplotlib.</strong></p>
+<p><strong>На данный момент ты знаешь:</strong></p>
+<ul>
+<li><strong>Основные элементы графика Matplotlib:</strong>  <code>Figure</code>, <code>Axes</code>, <code>Artists</code>.</li>
+<li><strong>Как создавать простейший график:</strong>  с помощью <code>plt.plot()</code>.</li>
+<li><strong>Два основных типа графиков:</strong>
+<ul>
+<li><strong>Линейные графики (<code>plt.plot()</code>):</strong> для отображения трендов, зависимостей, изменений величин с течением времени или по мере изменения другой переменной.</li>
+<li><strong>Точечные диаграммы (<code>plt.scatter()</code>):</strong> для отображения отдельных точек данных, исследования взаимосвязей, выявления кластеров и выбросов.</li>
+</ul>
+</li>
+<li><strong>Как настраивать внешний вид графиков:</strong>
+<ul>
+<li>Добавлять <strong>заголовок (<code>plt.title()</code>)</strong>.</li>
+<li>Добавлять <strong>подписи к осям (<code>plt.xlabel()</code>, <code>plt.ylabel()</code>)</strong>.</li>
+<li>Изменять <strong>цвет и стиль линий (<code>color</code>, <code>linestyle</code> в <code>plt.plot()</code>)</strong>.</li>
+<li>Изменять <strong>форму, размер и цвет маркеров (<code>marker</code>, <code>s</code>, <code>c</code> в <code>plt.scatter()</code>)</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Это уже отличный набор инструментов для начала визуализации данных!</strong>  Ты можешь создавать базовые, но уже информативные графики, и настраивать их внешний вид.</p>
+<p><strong>Визуализация – это ключевой навык в машинном обучении и анализе данных.</strong>  Умение строить графики позволяет тебе:</p>
+<ul>
+<li><strong>Лучше понимать данные:</strong>  Визуально исследовать распределения, зависимости, аномалии.</li>
+<li><strong>Находить инсайты:</strong>  Обнаруживать скрытые закономерности и тренды, которые сложно увидеть в таблицах.</li>
+<li><strong>Эффективно доносить результаты:</strong>  Представлять свои выводы и результаты анализа другим людям в наглядной и понятной форме.</li>
+</ul>
+<p><strong>Теперь давай расширим наш арсенал визуализаций и перейдем к столбчатым диаграммам (bar charts)!</strong></p>
+<p><strong>Столбчатые диаграммы (bar charts)</strong> – это отличный способ <strong>сравнить значения категорий или групп</strong>.  Они особенно хороши, когда у тебя есть <strong>категориальные данные</strong> (например, названия городов, типы товаров, категории клиентов) и ты хочешь показать <strong>сравнение какой-то числовой величины</strong> между этими категориями (например, количество жителей в городах, продажи по типам товаров, средний чек для разных категорий клиентов).</p>
+<p><strong>Готов начать изучать столбчатые диаграммы?</strong>  Или есть какие-то вопросы по точечным диаграммам или по тому, что мы уже прошли в Matplotlib?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Отлично!  Раз ты готов покорять новые вершины визуализации, то <strong>приступаем к столбчатым диаграммам (bar charts)!</strong> 📊</p>
+<p><strong>Столбчатые диаграммы (bar charts)</strong> – это один из самых интуитивно понятных и широко используемых типов графиков.  Их часто называют <strong>гистограммами</strong>, но важно различать столбчатые диаграммы (bar charts) и <strong>гистограммы (histograms)</strong>, которые мы рассмотрим позже.  <strong>Столбчатые диаграммы используются для сравнения значений <em>между разными категориями</em></strong>, а гистограммы – для отображения <em>распределения непрерывных данных</em>.</p>
+<p><strong>Когда используются столбчатые диаграммы?</strong></p>
+<ul>
+<li><strong>Для сравнения категориальных данных:</strong>  Когда у тебя есть категории (например, страны, продукты, отделы продаж) и ты хочешь сравнить какую-то числовую характеристику для каждой категории (например, ВВП стран, продажи продуктов, прибыль отделов).</li>
+<li><strong>Для отображения рейтингов и сравнений:</strong>  Столбчатые диаграммы отлично подходят для визуализации рейтингов, например, рейтингов популярности фильмов, оценок товаров, мест в соревнованиях.</li>
+<li><strong>Для показа изменений во времени для разных категорий:</strong>  Можно использовать группированные столбчатые диаграммы, чтобы сравнить, как меняется какая-то величина во времени для разных категорий.</li>
+</ul>
+<p><strong>Как создать столбчатую диаграмму в Matplotlib?</strong></p>
+<p>Для создания столбчатых диаграмм в Matplotlib используется функция <strong><code>plt.bar()</code></strong>.</p>
+<p><strong>Основной синтаксис <code>plt.bar(x, height, ...)</code>:</strong></p>
+<ul>
+<li><strong><code>x</code></strong> –  <strong>Позиции столбцов на оси X</strong>.  Обычно это <strong>категориальные значения</strong> (например, названия категорий).  Matplotlib автоматически располагает столбцы на оси X.  Можно передавать список строк (названий категорий) или числовые значения, если категории представлены числами.</li>
+<li><strong><code>height</code></strong> –  <strong>Высоты столбцов</strong>.  Это <strong>числовые значения</strong>, которые нужно сравнить между категориями.  Должны быть той же длины, что и <code>x</code>.</li>
+<li><strong>Дополнительные аргументы (параметры):</strong>  Позволяют настроить внешний вид столбцов: цвет, ширину, выравнивание и т.д.  Рассмотрим некоторые из них ниже.</li>
+</ul>
+<p><strong>Простейшая столбчатая диаграмма:</strong></p>
+<p>Предположим, у нас есть данные о продажах по разным категориям товаров:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+categories <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Категория А'</span><span class="token punctuation">,</span> <span class="token string">'Категория Б'</span><span class="token punctuation">,</span> <span class="token string">'Категория В'</span><span class="token punctuation">,</span> <span class="token string">'Категория Г'</span><span class="token punctuation">]</span>
+sales <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">220</span><span class="token punctuation">,</span> <span class="token number">180</span><span class="token punctuation">,</span> <span class="token number">250</span><span class="token punctuation">]</span> <span class="token comment"># Продажи в условных единицах</span>
+</code></pre><p>Чтобы построить столбчатую диаграмму этих данных, используем <code>plt.bar()</code>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>categories<span class="token punctuation">,</span> sales<span class="token punctuation">)</span> <span class="token comment"># Функция bar() строит столбчатую диаграмму</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Продажи по категориям'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Категории товаров'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Объем продаж'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что ты видишь?  Теперь ты должен увидеть <strong>столбчатую диаграмму</strong>.  На оси X будут названия категорий ('Категория А', 'Категория Б', 'Категория В', 'Категория Г'), а высота каждого столбца будет соответствовать объему продаж для этой категории.</li>
+</ol>
+<p><strong>Настройка внешнего вида столбцов в <code>plt.bar()</code>:</strong></p>
+<p>Функция <code>plt.bar()</code> также предоставляет параметры для настройки внешнего вида столбцов.  Рассмотрим некоторые важные:</p>
+<ul>
+<li>
+<p><strong><code>color=цвет</code>:</strong>  Задает <strong>цвет столбцов</strong>.  Можно использовать названия цветов, HEX-коды и т.д.</p>
+</li>
+<li>
+<p><strong><code>width=ширина</code>:</strong>  Задает <strong>ширину столбцов</strong>.  Значение от 0 до 1 (доля от расстояния между соседними столбцами).  По умолчанию ширина обычно 0.8.  Можно сделать столбцы уже или шире.</p>
+</li>
+<li>
+<p><strong><code>align='выравнивание'</code>:</strong>  Задает <strong>выравнивание столбцов по оси X</strong>.  Возможные значения:</p>
+<ul>
+<li><code>'center'</code> – <strong>центр столбца</strong> совпадает с позицией <code>x</code> (по умолчанию).</li>
+<li><code>'edge'</code> – <strong>левый край столбца</strong> совпадает с позицией <code>x</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>edgecolor=цвет_границы</code>:</strong>  Задает <strong>цвет границы столбцов</strong>.</p>
+</li>
+<li>
+<p><strong><code>linewidth=толщина_границы</code>:</strong>  Задает <strong>толщину границы столбцов</strong>.</p>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Давай изменим цвет столбцов на синий, уменьшим ширину и сделаем границы черными:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+categories <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'Категория А'</span><span class="token punctuation">,</span> <span class="token string">'Категория Б'</span><span class="token punctuation">,</span> <span class="token string">'Категория В'</span><span class="token punctuation">,</span> <span class="token string">'Категория Г'</span><span class="token punctuation">]</span>
+sales <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">150</span><span class="token punctuation">,</span> <span class="token number">220</span><span class="token punctuation">,</span> <span class="token number">180</span><span class="token punctuation">,</span> <span class="token number">250</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>bar<span class="token punctuation">(</span>categories<span class="token punctuation">,</span> sales<span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'blue'</span><span class="token punctuation">,</span> width<span class="token operator">=</span><span class="token number">0.5</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> linewidth<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span> <span class="token comment"># Настраиваем цвет, ширину, границу</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Продажи по категориям (синие столбцы, узкие, с черной границей)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Категории товаров'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Объем продаж'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Теперь столбцы должны быть <strong>синими, более узкими, с черной границей</strong>.  Попробуй менять значения <code>color</code>, <code>width</code>, <code>edgecolor</code>, <code>linewidth</code> на другие, чтобы поэкспериментировать с разными вариантами.  Например:
+<ul>
+<li><code>color='green', width=0.9, edgecolor='none'</code> (зеленые широкие столбцы без границы)</li>
+<li><code>color='orange', width=0.3, edgecolor='red', linewidth=2</code> (оранжевые узкие столбцы с красной толстой границей)</li>
+<li><code>color='magenta', width=0.7, align='edge'</code> (фиолетовые столбцы, выровненные по левому краю)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Возьми код своей простой столбчатой диаграммы (<code>plt.bar(categories, sales)</code>)</strong>.</li>
+<li><strong>Добавь к ней:</strong>
+<ul>
+<li>Заголовок графика на русском языке (любой, подходящий по смыслу).</li>
+<li>Подпись к оси X "Товарные категории".</li>
+<li>Подпись к оси Y "Сумма продаж, у.е.".</li>
+<li>Измени цвет столбцов на <strong>фиолетовый</strong> (<code>'purple'</code>).</li>
+<li>Установи ширину столбцов <strong>0.7</strong>.</li>
+<li>Добавь <strong>границу столбцов</strong> черного цвета (<code>'black'</code>) толщиной <strong>0.8</strong>.</li>
+</ul>
+</li>
+</ol>
+<p>Запусти код и убедись, что все изменения применились к графику.  Поэкспериментируй с разными параметрами столбчатых диаграмм.</p>
+<p>После выполнения задания, обсудим результаты и перейдем к следующей теме - <strong>гистограммам (histograms)</strong>.  Как тебе такой план?  И есть ли вопросы по столбчатым диаграммам и их настройке?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Великолепно! Столбчатые диаграммы тоже освоены – еще один отличный инструмент в копилку твоих навыков визуализации! 🚀</p>
+<p>Перед тем, как мы перейдем к гистограммам, давай еще раз подчеркнем <strong>ключевое различие между столбчатыми диаграммами (bar charts) и гистограммами (histograms)</strong>.  Их часто путают, потому что внешне они похожи – состоят из столбцов.  Но <strong>назначение и тип данных</strong> для них <strong>разные</strong>:</p>
+<ul>
+<li>
+<p><strong>Столбчатые диаграммы (Bar Charts):</strong></p>
+<ul>
+<li>Используются для <strong>сравнения <em>значений</em> между разными <em>категориями</em></strong>.</li>
+<li><strong>Ось X – <em>категориальная</em>:</strong>  названия категорий (например, 'Категория А', 'Категория Б', 'Город 1', 'Город 2', 'Яблоко', 'Банан').</li>
+<li><strong>Ось Y – <em>числовая</em>:</strong>  значения, которые сравниваются для каждой категории (например, 'Продажи', 'Население', 'Цена').</li>
+<li><strong>Между столбцами есть <em>промежутки</em></strong>, так как категории дискретны и не связаны между собой в порядке следования по оси X.</li>
+</ul>
+</li>
+<li>
+<p><strong>Гистограммы (Histograms):</strong></p>
+<ul>
+<li>Используются для отображения <strong>распределения <em>непрерывных</em> данных</strong>.</li>
+<li><strong>Ось X – <em>непрерывная</em>:</strong>  диапазон значений <em>непрерывной</em> переменной (например, 'Возраст', 'Рост', 'Температура', 'Время').  Ось X разбивается на <strong>интервалы (bins)</strong>, и гистограмма показывает, сколько значений попадает в каждый интервал.</li>
+<li><strong>Ось Y – <em>частота</em> (количество) или <em>относительная частота</em> (доля) значений, попадающих в каждый интервал.</strong></li>
+<li><strong>Столбцы идут <em>вплотную друг к другу</em></strong> (обычно), потому что ось X непрерывная, и интервалы (bins) следуют друг за другом без разрывов.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Грубо говоря:</strong></p>
+<ul>
+<li><strong>Столбчатая диаграмма:</strong> "Сколько <em>чего-то</em> в <em>каждой категории</em>?" (сравнение категорий)</li>
+<li><strong>Гистограмма:</strong> "Как <em>часто</em> встречаются <em>разные значения</em> непрерывной переменной?" (распределение значений)</li>
+</ul>
+<p><strong>Теперь, когда мы разобрались с различиями, давай перейдем к гистограммам!</strong></p>
+<p><strong>Гистограммы (Histograms)</strong> – это незаменимый инструмент для <strong>исследования распределения <em>непрерывных</em> данных</strong>.  Они помогают понять:</p>
+<ul>
+<li><strong>Форму распределения:</strong>  Является ли распределение симметричным (как нормальное распределение), скошенным влево или вправо, бимодальным (с двумя "пиками") и т.д.</li>
+<li><strong>Центральную тенденцию:</strong>  Где "центр" распределения (примерно среднее значение или медиана).</li>
+<li><strong>Размах и разброс:</strong>  Насколько "широко" распределены данные, какой у них разброс.</li>
+<li><strong>Выбросы и аномалии:</strong>  Видны ли значения, которые сильно отличаются от основной массы данных.</li>
+</ul>
+<p><strong>Как создать гистограмму в Matplotlib?</strong></p>
+<p>Для создания гистограмм в Matplotlib используется функция <strong><code>plt.hist()</code></strong>.</p>
+<p><strong>Основной синтаксис <code>plt.hist(x, ...)</code>:</strong></p>
+<ul>
+<li><strong><code>x</code></strong> –  <strong>Данные для построения гистограммы</strong>.  Это должен быть <strong>одномерный массив <em>непрерывных</em> числовых данных</strong> (список, NumPy массив, Pandas Series).</li>
+<li><strong>Дополнительные аргументы (параметры):</strong>  Позволяют настроить внешний вид гистограммы: количество интервалов (bins), цвет столбцов, тип гистограммы и т.д.  Рассмотрим некоторые из них ниже.</li>
+</ul>
+<p><strong>Простейшая гистограмма:</strong></p>
+<p>Давай сгенерируем случайные данные, имитирующие, например, значения некоторой непрерывной величины, и построим гистограмму:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+<span class="token keyword keyword-import">import</span> numpy <span class="token keyword keyword-as">as</span> np <span class="token comment"># NumPy нам понадобится для генерации случайных данных</span>
+
+data <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randn<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span> <span class="token comment"># Генерируем 1000 случайных чисел из стандартного нормального распределения</span>
+
+plt<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>data<span class="token punctuation">)</span> <span class="token comment"># Функция hist() строит гистограмму</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Гистограмма распределения случайных данных'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Значения данных'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Частота'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Пояснение:</strong></p>
+<ul>
+<li><code>data = np.random.randn(1000)</code> –  Мы используем функцию <code>np.random.randn(1000)</code> из NumPy для генерации <strong>1000 случайных чисел из стандартного нормального распределения</strong>.  Это распределение похоже на "колокол" – большинство значений сосредоточено вокруг нуля, и чем дальше от нуля, тем меньше значений.  Мы будем использовать эти случайные данные для построения гистограммы.</li>
+<li><code>plt.hist(data)</code> –  <strong>Функция <code>hist()</code> строит гистограмму.</strong>  Единственный обязательный аргумент – это <strong>данные <code>data</code></strong>.  Matplotlib автоматически разбивает данные на некоторое количество интервалов (bins) и считает, сколько значений попадает в каждый интервал, а затем рисует столбцы, высота которых соответствует частоте значений в каждом интервале.</li>
+</ul>
+<p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что ты видишь?  Теперь ты должен увидеть <strong>гистограмму</strong>.  Ось X показывает диапазон значений наших случайных данных, разбитый на интервалы (bins).  Ось Y показывает <strong>частоту</strong> – количество значений, попавших в каждый интервал.  По форме гистограммы можно увидеть, что распределение похоже на "колокол", как и ожидалось для нормального распределения.</li>
+</ol>
+<p><strong>Настройка внешнего вида гистограммы в <code>plt.hist()</code>:</strong></p>
+<p>Функция <code>plt.hist()</code> также предоставляет параметры для настройки гистограммы.  Рассмотрим основные:</p>
+<ul>
+<li>
+<p><strong><code>bins=количество_интервалов</code> или <code>bins=границы_интервалов</code>:</strong>  Задает <strong>количество интервалов (bins)</strong> или <strong>границы интервалов</strong>.</p>
+<ul>
+<li>Если задать <strong>целое число</strong> (например, <code>bins=20</code>), то Matplotlib разобьет данные на указанное количество <strong>равных по ширине</strong> интервалов.</li>
+<li>Если задать <strong>список или массив</strong> (например, <code>bins=[ -3, -2, -1, 0, 1, 2, 3 ]</code>), то это будут <strong>границы интервалов</strong>, и интервалы могут быть разной ширины.</li>
+</ul>
+</li>
+<li>
+<p><strong><code>color=цвет</code>:</strong>  Задает <strong>цвет столбцов гистограммы</strong>.</p>
+</li>
+<li>
+<p><strong><code>edgecolor=цвет_границы</code>:</strong>  Задает <strong>цвет границы столбцов гистограммы</strong>.</p>
+</li>
+<li>
+<p><strong><code>alpha=прозрачность</code>:</strong>  Задает <strong>прозрачность столбцов</strong>.  Значение от 0 (полностью прозрачный) до 1 (полностью непрозрачный).  Полезно, если нужно наложить несколько гистограмм друг на друга.</p>
+</li>
+<li>
+<p><strong><code>histtype='тип'</code>:</strong>  Задает <strong>тип гистограммы</strong>.  Основные типы:</p>
+<ul>
+<li><code>'bar'</code> – <strong>обычная столбчатая гистограмма</strong> (по умолчанию).</li>
+<li><code>'step'</code> – <strong>ступенчатая гистограмма</strong> (только контур столбцов, без заливки).</li>
+<li><code>'stepfilled'</code> – <strong>ступенчатая гистограмма с заливкой</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Давай изменим количество интервалов, цвет, добавим границы и сделаем гистограмму полупрозрачной:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+<span class="token keyword keyword-import">import</span> numpy <span class="token keyword keyword-as">as</span> np
+
+data <span class="token operator">=</span> np<span class="token punctuation">.</span>random<span class="token punctuation">.</span>randn<span class="token punctuation">(</span><span class="token number">1000</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>hist<span class="token punctuation">(</span>data<span class="token punctuation">,</span> bins<span class="token operator">=</span><span class="token number">30</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'skyblue'</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.7</span><span class="token punctuation">)</span> <span class="token comment"># Настраиваем bins, цвет, границу, прозрачность</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Гистограмма (30 интервалов, голубая, с черной границей, полупрозрачная)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Значения данных'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Частота'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Теперь гистограмма должна иметь <strong>30 интервалов, быть светло-голубой, с черной границей и полупрозрачной</strong>.  Попробуй менять значения <code>bins</code>, <code>color</code>, <code>edgecolor</code>, <code>alpha</code> и <code>histtype</code> на другие, чтобы поэкспериментировать с разными вариантами.  Например:
+<ul>
+<li><code>bins=10, color='lightcoral', edgecolor='white', alpha=1, histtype='step'</code> (10 интервалов, светло-коралловая, белая граница, непрозрачная, ступенчатая)</li>
+<li><code>bins=[-4, -3, -2, -1, 0, 1, 2, 3, 4], color='lightgreen', alpha=0.5, histtype='stepfilled'</code> (интервалы с неравными границами, светло-зеленая, полупрозрачная, ступенчатая с заливкой)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Возьми код своей простой гистограммы (<code>plt.hist(data)</code>)</strong>.</li>
+<li><strong>Добавь к ней:</strong>
+<ul>
+<li>Заголовок графика на русском языке (любой, подходящий по смыслу).</li>
+<li>Подпись к оси X "Значение признака".</li>
+<li>Подпись к оси Y "Количество наблюдений".</li>
+<li>Установи количество интервалов <strong>25</strong>.</li>
+<li>Измени цвет столбцов на <strong>темно-синий</strong> (<code>'navy'</code>).</li>
+<li>Добавь <strong>границу столбцов</strong> белого цвета (<code>'white'</code>) толщиной <strong>1</strong>.</li>
+<li>Сделай гистограмму <strong>ступенчатой с заливкой</strong> (<code>histtype='stepfilled'</code>).</li>
+</ul>
+</li>
+</ol>
+<p>Запусти код и убедись, что все изменения применились к графику.  Поэкспериментируй с разными параметрами гистограмм.</p>
+<p>После выполнения задания, обсудим результаты и подведем итоги по теме гистограмм и вообще по визуализации данных с Matplotlib, которую мы начали изучать.  Как тебе такой план?  И есть ли вопросы по гистограммам и их настройке?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Великолепно! Гистограммы тоже в твоем арсенале! 🎉  Ты уверенно осваиваешь различные типы графиков и их настройку в Matplotlib!</p>
+<p>Давай на мгновение остановимся и <strong>подведем итоги по тому, что мы уже изучили в визуализации данных с Matplotlib:</strong></p>
+<p><strong>На данный момент ты умеешь создавать и настраивать в Matplotlib:</strong></p>
+<ul>
+<li><strong>Линейные графики (<code>plt.plot()</code>):</strong>  Для отображения зависимостей и трендов.</li>
+<li><strong>Точечные диаграммы (<code>plt.scatter()</code>):</strong>  Для исследования взаимосвязей и распределения отдельных точек данных.</li>
+<li><strong>Столбчатые диаграммы (<code>plt.bar()</code>):</strong>  Для сравнения значений между категориями.</li>
+<li><strong>Гистограммы (<code>plt.hist()</code>):</strong>  Для изучения распределения непрерывных данных.</li>
+</ul>
+<p><strong>И ты умеешь настраивать основные элементы этих графиков:</strong></p>
+<ul>
+<li><strong>Заголовки (<code>plt.title()</code>)</strong></li>
+<li><strong>Подписи осей (<code>plt.xlabel()</code>, <code>plt.ylabel()</code>)</strong></li>
+<li><strong>Цвета линий, точек, столбцов (<code>color</code>, <code>c</code>)</strong></li>
+<li><strong>Стили линий (<code>linestyle</code>, <code>ls</code>)</strong></li>
+<li><strong>Формы и размеры маркеров (<code>marker</code>, <code>s</code>)</strong></li>
+<li><strong>Ширину столбцов (<code>width</code>)</strong></li>
+<li><strong>Количество интервалов в гистограмме (<code>bins</code>)</strong></li>
+<li><strong>Границы и прозрачность элементов (<code>edgecolor</code>, <code>linewidth</code>, <code>alpha</code>)</strong></li>
+<li><strong>Типы гистограмм (<code>histtype</code>)</strong></li>
+</ul>
+<p><strong>Это уже очень солидный набор инструментов для визуализации!</strong> Ты можешь создавать разнообразные графики, чтобы исследовать данные, находить закономерности и представлять свои результаты.</p>
+<p><strong>Matplotlib – это мощная и гибкая библиотека, и ты сделал отличный старт в ее освоении!</strong></p>
+<p><strong>Что дальше?</strong></p>
+<p>По нашему плану, следующим шагом будет <strong>Seaborn</strong>.  <strong>Seaborn</strong> – это библиотека визуализации <strong>более высокого уровня</strong>, которая строится <strong>поверх Matplotlib</strong>.  Она делает многие вещи <strong>проще и быстрее</strong>, особенно когда дело касается <strong>статистической визуализации</strong> и работы с <strong>Pandas DataFrame</strong>.</p>
+<p><strong>Seaborn "дружит" с Pandas DataFrame</strong> и позволяет создавать сложные и красивые статистические графики, используя данные прямо из DataFrame, часто всего в несколько строчек кода.  Seaborn берет на себя многие рутинные задачи по настройке внешнего вида графиков, чтобы ты мог сосредоточиться на <strong>анализе данных</strong>, а не на коде визуализации.</p>
+<p><strong>Как ты смотришь на то, чтобы на следующем занятии начать изучение Seaborn?</strong>  Мы посмотрим, как создавать основные типы графиков Seaborn, как настраивать их внешний вид и как использовать Seaborn вместе с Pandas DataFrame для эффективной визуализации данных.</p>
+<p>Или, может быть, у тебя есть какие-то <strong>вопросы</strong> по гистограммам или по Matplotlib в целом, которые ты хотел бы обсудить перед переходом к Seaborn?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Отлично!  Раз ты готов к новым инструментам, то <strong>приветствуем Seaborn!</strong> 🚀🌊</p>
+<p><strong>Seaborn</strong> – это как <strong>улучшенная версия Matplotlib для статистической визуализации.</strong>  Представь, что Matplotlib – это мощный конструктор, из которого можно собрать практически любой график, но иногда нужно потратить много времени и усилий, чтобы "собрать" что-то красивое и сложное.  А Seaborn – это как <strong>готовые "наборы" деталей для конструктора</strong>, которые позволяют быстро и легко создавать <strong>типовые статистические графики высокого качества</strong>, при этом сохраняя гибкость Matplotlib.</p>
+<p><strong>Ключевые преимущества Seaborn:</strong></p>
+<ul>
+<li><strong>Высокий уровень абстракции:</strong>  Seaborn предоставляет <strong>более высокоуровневый интерфейс</strong> для создания графиков, чем Matplotlib.  Многие вещи, которые в Matplotlib нужно делать "руками", в Seaborn делаются автоматически или с помощью нескольких параметров.  Это <strong>упрощает и ускоряет</strong> процесс визуализации.</li>
+<li><strong>Специализация на статистической визуализации:</strong>  Seaborn изначально разработан для создания <strong>статистических графиков</strong>.  В нем "из коробки" есть множество функций для построения распределений, взаимосвязей, сравнений, которые часто используются в анализе данных и машинном обучении.</li>
+<li><strong>Интеграция с Pandas DataFrame:</strong>  Seaborn <strong>отлично работает с Pandas DataFrame</strong>.  Ты можешь передавать DataFrame и имена столбцов прямо в функции Seaborn, и Seaborn сам "разберется", как отобразить данные на графике.  Это делает визуализацию данных из Pandas <strong>очень удобной и эффективной</strong>.</li>
+<li><strong>Красивый внешний вид по умолчанию:</strong>  Графики Seaborn <strong>выглядят привлекательно "из коробки"</strong>, даже без дополнительной настройки.  Seaborn использует <strong>разумные стили и цветовые палитры</strong>, что делает визуализации более профессиональными и понятными.</li>
+<li><strong>Расширение возможностей Matplotlib:</strong>  Seaborn <strong>не заменяет Matplotlib, а дополняет его</strong>.  Seaborn построен на основе Matplotlib, и ты можешь использовать <strong>все возможности Matplotlib для тонкой настройки графиков Seaborn</strong>, если это необходимо.  То есть, изучив Matplotlib, ты уже знаешь "фундамент" Seaborn, и тебе будет легче его освоить.</li>
+</ul>
+<p><strong>Как начать использовать Seaborn?</strong></p>
+<p>Как и Matplotlib, Seaborn нужно импортировать.  Обычно Seaborn импортируют как <code>sns</code>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+</code></pre><p><strong>Давай начнем знакомство с Seaborn с простого примера – построим точечную диаграмму (scatter plot) с помощью Seaborn.</strong>  И сравним, как это делается в Seaborn и в Matplotlib.</p>
+<p>Вспомним, как мы строили точечную диаграмму в Matplotlib:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+x_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+y_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+plt<span class="token punctuation">.</span>scatter<span class="token punctuation">(</span>x_values<span class="token punctuation">,</span> y_values<span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p>А вот как построить <strong>аналогичную точечную диаграмму в Seaborn</strong>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt <span class="token comment"># Matplotlib все равно нужен для показа графика</span>
+
+x_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+y_values <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+
+sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>x<span class="token operator">=</span>x_values<span class="token punctuation">,</span> y<span class="token operator">=</span>y_values<span class="token punctuation">)</span> <span class="token comment"># Функция scatterplot() в Seaborn</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token comment"># Matplotlib все еще нужен для plt.show()</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти оба кода (Matplotlib и Seaborn) и сравни результаты.</strong>  Внешне графики должны быть очень похожи.  Но обрати внимание на <strong>код Seaborn – он стал немного короче и проще</strong>.  Нам не нужно отдельно задавать заголовок и подписи осей – Seaborn автоматически берет имена переменных (<code>x</code>, <code>y</code>) и использует их в качестве подписей осей.  Стиль графика Seaborn по умолчанию тоже может немного отличаться – он обычно выглядит более современно и аккуратно.</li>
+</ol>
+<p><strong>Разница в коде Seaborn:</strong></p>
+<ul>
+<li><code>sns.scatterplot(x=x_values, y=y_values)</code> –  <strong>Функция <code>sns.scatterplot()</code> в Seaborn – это аналог <code>plt.scatter()</code> в Matplotlib, но более высокоуровневая.</strong>
+<ul>
+<li>Аргументы <code>x</code> и <code>y</code> в <code>sns.scatterplot()</code> принимают <strong>данные для оси X и Y</strong>.  Здесь мы также передаем списки <code>x_values</code> и <code>y_values</code>.</li>
+<li><strong>Обрати внимание:</strong>  В Seaborn <strong>мы передаем данные <em>по именам аргументов</em> (<code>x=</code>, <code>y=</code>)</strong>, а не просто по порядку, как в <code>plt.scatter()</code>.  Это делает код более читаемым и позволяет передавать больше параметров в произвольном порядке.</li>
+</ul>
+</li>
+</ul>
+<p><strong>В следующем шаге мы увидим настоящую мощь Seaborn – как легко и удобно визуализировать данные из Pandas DataFrame!</strong>  Но для начала – убедись, что у тебя получилось запустить код Seaborn и построить точечную диаграмму.</p>
+<p><strong>Скажи, получилось ли запустить код Seaborn?  Заметил ли ты какие-то отличия от Matplotlib?  И есть ли у тебя вопросы на этом первом этапе знакомства с Seaborn?</strong>  Не стесняйся спрашивать! 😉 Главное, чтобы ты почувствовал разницу и увидел, как Seaborn упрощает визуализацию.</p>
+<hr>
+<p>Отлично!  Вот сейчас мы и увидим <strong>настоящую магию Seaborn – его дружбу с Pandas DataFrame!</strong> ✨🤝🐼</p>
+<p><strong>Seaborn раскрывает свою мощь в полной мере, когда ты работаешь с данными, организованными в Pandas DataFrame.</strong>  Вспомни, как часто мы использовали DataFrame для хранения и обработки табличных данных.  Теперь представь, что ты можешь <strong>визуализировать данные из DataFrame напрямую, без лишних преобразований и перекладываний данных в списки или массивы!</strong></p>
+<p><strong>Seaborn "понимает" структуру DataFrame и позволяет тебе указывать:</strong></p>
+<ul>
+<li><strong>DataFrame, из которого брать данные.</strong></li>
+<li><strong>Имена столбцов DataFrame, которые нужно использовать для осей X и Y.</strong></li>
+<li><strong>Столбцы для кодирования дополнительных измерений (например, цвет, размер, форма точек).</strong></li>
+</ul>
+<p><strong>Это делает код визуализации в Seaborn невероятно лаконичным, читаемым и эффективным!</strong></p>
+<p><strong>Пример: Точечная диаграмма Seaborn с использованием Pandas DataFrame</strong></p>
+<p>Давай создадим простой Pandas DataFrame с данными о возрасте и доходе людей:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+df_seaborn <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict<span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"DataFrame для Seaborn:\n"</span><span class="token punctuation">,</span> df_seaborn<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span> <span class="token comment"># Посмотрим на первые несколько строк DataFrame</span>
+</code></pre><p>Теперь построим <strong>точечную диаграмму, показывающую зависимость дохода от возраста, используя Seaborn и наш DataFrame <code>df_seaborn</code>:</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Возраст'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'Доход'</span><span class="token punctuation">)</span> <span class="token comment"># Указываем DataFrame и имена столбцов для x и y</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Зависимость дохода от возраста (Seaborn + DataFrame)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Возраст (годы)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Доход (у.е.)'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Пояснение:</strong></p>
+<ul>
+<li><code>sns.scatterplot(data=df_seaborn, x='Возраст', y='Доход')</code> –  <strong>Вот как просто строится точечная диаграмма в Seaborn с использованием DataFrame!</strong>
+<ul>
+<li><code>data=df_seaborn</code> –  <strong>Аргумент <code>data</code> указывает, какой DataFrame использовать в качестве источника данных.</strong>  Мы передаем наш DataFrame <code>df_seaborn</code>.</li>
+<li><code>x='Возраст'</code> –  <strong>Аргумент <code>x</code> указывает, какой столбец DataFrame использовать для оси X.</strong>  Мы просто указываем <strong>имя столбца</strong> <code>'Возраст'</code> <strong>в виде строки</strong>!  Seaborn сам найдет этот столбец в DataFrame <code>df_seaborn</code> и возьмет его значения для оси X.</li>
+<li><code>y='Доход'</code> –  <strong>Аналогично, аргумент <code>y</code> указывает столбец <code>'Доход'</code> для оси Y.</strong></li>
+</ul>
+</li>
+</ul>
+<p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Скопируй и запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Ты должен увидеть точечную диаграмму, показывающую зависимость дохода от возраста.  График Seaborn по умолчанию выглядит уже довольно хорошо, с подписями осей, основанными на именах столбцов DataFrame.</li>
+</ol>
+<p><strong>Сравни этот код Seaborn с тем, как мы делали то же самое в Matplotlib, передавая списки <code>x_values</code> и <code>y_values</code>.  Видишь, насколько код Seaborn стал более лаконичным и понятным?</strong>  Нам больше не нужно "вытаскивать" данные из DataFrame в отдельные списки – Seaborn сам берет нужные столбцы из DataFrame по их именам!</p>
+<p><strong>Это только начало!  В дальнейшем мы увидим, как Seaborn позволяет создавать еще более сложные и информативные статистические графики с минимальным количеством кода, особенно при работе с Pandas DataFrame.</strong></p>
+<p><strong>Скажи, получилось ли у тебя запустить код Seaborn с DataFrame?  Чувствуешь ли ты разницу и удобство работы с DataFrame в Seaborn?  И есть ли у тебя вопросы на этом этапе?</strong>  Не стесняйся спрашивать! 😉  Главное, чтобы ты прочувствовал, насколько Seaborn упрощает визуализацию данных из DataFrame.</p>
+<hr>
+<p>Великолепно! 👍  Вот теперь мы дошли до действительно <strong>интересных возможностей Seaborn – кодирование дополнительных измерений на графиках!</strong> 🌟</p>
+<p>Точечные диаграммы, которые мы строили до сих пор, показывали взаимосвязь только между <strong>двумя переменными</strong> (X и Y).  Но часто в данных у нас есть <strong>больше, чем две переменные</strong>, и мы хотим увидеть, как они взаимодействуют друг с другом, и как <strong>дополнительные переменные влияют на взаимосвязь между X и Y</strong>.</p>
+<p><strong>Seaborn позволяет нам кодировать дополнительные измерения на 2D-графиках, используя визуальные признаки, такие как:</strong></p>
+<ul>
+<li><strong>Цвет точек (hue):</strong>  Разные цвета для точек, принадлежащих к разным категориям.</li>
+<li><strong>Размер точек (size):</strong>  Разный размер точек в зависимости от значения третьей числовой переменной.</li>
+<li><strong>Форма точек (style):</strong>  Разная форма точек для разных категорий.</li>
+</ul>
+<p><strong>Сегодня мы начнем с самого распространенного и мощного способа кодирования дополнительного измерения – с цвета точек (hue).</strong></p>
+<p><strong>Параметр <code>hue</code> в Seaborn</strong></p>
+<p>Параметр <code>hue</code> (англ. "оттенок", "цвет") – это <strong>ключевой параметр в Seaborn для добавления <em>категориального</em> измерения к графику.</strong>  Когда ты используешь <code>hue</code>, Seaborn <strong>автоматически раскрашивает точки (или другие элементы графика) в разные цвета в зависимости от значений в <em>категориальном столбце</em> DataFrame.</strong></p>
+<p><strong>Как использовать <code>hue</code> в <code>sns.scatterplot()</code>:</strong></p>
+<p>Просто добавь аргумент <code>hue='имя_категориального_столбца'</code> в функцию <code>sns.scatterplot()</code>.  Seaborn сам позаботится о выборе подходящей цветовой палитры и создании легенды, объясняющей, какой цвет соответствует какой категории.</p>
+<p><strong>Пример: Точечная диаграмма с кодированием категорий цветом (hue)</strong></p>
+<p>Давай расширим наш DataFrame <code>df_seaborn</code>, добавив столбец 'Пол' (категориальная переменная):</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict_hue <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Пол'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">]</span> <span class="token comment"># Категориальный столбец 'Пол'</span>
+<span class="token punctuation">}</span>
+df_seaborn_hue <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict_hue<span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"DataFrame для Seaborn с 'Пол':\n"</span><span class="token punctuation">,</span> df_seaborn_hue<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p>Теперь построим точечную диаграмму, показывающую зависимость дохода от возраста, <strong>и раскрасим точки в разные цвета в зависимости от пола, используя <code>hue='Пол'</code>:</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>sns<span class="token punctuation">.</span>scatterplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Возраст'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'Доход'</span><span class="token punctuation">,</span> hue<span class="token operator">=</span><span class="token string">'Пол'</span><span class="token punctuation">)</span> <span class="token comment"># Добавляем hue='Пол'</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Зависимость дохода от возраста с разделением по полу (hue="Пол")'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Возраст (годы)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Доход (у.е.)'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Пояснение:</strong></p>
+<ul>
+<li><code>sns.scatterplot(data=df_seaborn_hue, x='Возраст', y='Доход', hue='Пол')</code> –  <strong>Мы добавили всего один аргумент – <code>hue='Пол'</code>!</strong>
+<ul>
+<li><code>hue='Пол'</code> –  <strong>Указывает Seaborn, что нужно использовать столбец 'Пол' для кодирования цвета точек.</strong>  Seaborn автоматически определит уникальные значения в столбце 'Пол' ('Жен' и 'Муж') и назначит <strong>разные цвета</strong> для точек, соответствующих каждой категории.  Также Seaborn автоматически добавит <strong>легенду</strong>, которая объясняет, какой цвет какому полу соответствует.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Скопируй и запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что изменилось?  Теперь точки на точечной диаграмме <strong>раскрашены в разные цвета</strong> – например, синим и оранжевым (цветовая палитра может немного отличаться).  И ты должен увидеть <strong>легенду</strong> справа от графика, где указано, что синий цвет соответствует 'Жен', а оранжевый – 'Муж' (или наоборот, в зависимости от цветовой палитры Seaborn).</li>
+</ol>
+<p><strong>Теперь ты видишь, как всего одной строчкой кода (добавив <code>hue='Пол'</code>) мы смогли добавить <em>третье измерение</em> на наш 2D-график!</strong>  Мы визуально разделили данные на две группы (мужчины и женщины) и можем теперь сравнивать, как зависимость дохода от возраста выглядит для каждой группы отдельно.  Это открывает новые возможности для анализа и понимания данных!</p>
+<p><strong>Поэкспериментируй:</strong>  Попробуй изменить значение <code>hue</code> на другой категориальный столбец, если бы он у тебя был в DataFrame (например, 'Город', если бы у нас были данные по городам).  Посмотри, как меняется график и легенда.</p>
+<p><strong>Скажи, получилось ли у тебя запустить код с <code>hue</code>?  Понятно ли, как работает параметр <code>hue</code> и как он добавляет третье измерение к графику?  И есть ли у тебя вопросы?</strong>  Не стесняйся спрашивать! 😉 Главное, чтобы ты прочувствовал мощь параметра <code>hue</code> и то, как легко Seaborn позволяет кодировать категории цветом.</p>
+<hr>
+<p>Замечательно!  Раз параметр <code>hue</code> покорился, и ты готов к новым горизонтам, то <strong>двигаемся дальше и осваиваем новые типы графиков Seaborn!</strong> 🚀</p>
+<p>Сегодня мы познакомимся с еще одним очень полезным типом статистических графиков в Seaborn – <strong>ящичковыми диаграммами (box plots)</strong>, или их еще называют <strong>диаграммами размаха</strong>.</p>
+<p><strong>Ящичковые диаграммы (Box Plots)</strong> – это отличный способ <strong>визуально сравнить распределения <em>числовой</em> переменной для разных <em>категорий</em></strong>.  В отличие от точечных диаграмм, которые показывают отдельные точки, ящичковые диаграммы показывают <strong>сводную статистику распределения</strong> для каждой категории: медиану, квартили, размах, выбросы.</p>
+<p><strong>Когда используются ящичковые диаграммы?</strong></p>
+<ul>
+<li><strong>Для сравнения распределений между группами:</strong>  Когда ты хочешь сравнить, как распределена числовая переменная (например, доход, возраст, оценка) в разных категориях (например, по полу, по типу продукта, по региону).  Ящичковые диаграммы позволяют быстро увидеть различия в центральной тенденции, разбросе и форме распределения между группами.</li>
+<li><strong>Для выявления выбросов:</strong>  Ящичковые диаграммы наглядно показывают выбросы – значения, которые выходят за пределы "нормального" размаха данных.</li>
+<li><strong>Для сравнения нескольких распределений на одном графике:</strong>  Ящичковые диаграммы компактны и позволяют эффективно сравнивать несколько распределений рядом друг с другом.</li>
+</ul>
+<p><strong>Что показывает ящичковая диаграмма?</strong></p>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Boxplot_vs_PDF.svg" alt="Box Plot Anatomy"><br>
+<em>(Изображение с Википедии: <a href="https://en.wikipedia.org/wiki/Box_plot">https://en.wikipedia.org/wiki/Box_plot</a>)</em></p>
+<ul>
+<li><strong>Ящик (Box):</strong>  Ограничен <strong>первым квартилем (Q1)</strong> и <strong>третьим квартилем (Q3)</strong>.  Внутри ящика лежат <strong>50% "центральных" данных</strong>.  Длина ящика (Q3 - Q1) – это <strong>межквартильный размах (IQR)</strong>, который характеризует разброс "центральной" половины данных.</li>
+<li><strong>Медиана (Median, средняя линия внутри ящика):</strong>  Показывает <strong>"середину" распределения</strong>.  Делит данные пополам.</li>
+<li><strong>Усы (Whiskers):</strong>  Линии, идущие от ящика.  Обычно простираются до <strong>минимального значения, не меньшего, чем Q1 - 1.5 * IQR</strong>, и до <strong>максимального значения, не большего, чем Q3 + 1.5 * IQR</strong>.  Усы показывают "нормальный" размах данных, исключая выбросы.</li>
+<li><strong>Выбросы (Outliers, точки за пределами усов):</strong>  Точки, которые лежат <strong>за пределами усов</strong>.  Считаются <strong>аномально большими или маленькими значениями</strong>.</li>
+</ul>
+<p><strong>Как создать ящичковую диаграмму в Seaborn?</strong></p>
+<p>Для создания ящичковых диаграмм в Seaborn используется функция <strong><code>sns.boxplot()</code></strong>.</p>
+<p><strong>Основной синтаксис <code>sns.boxplot(data=DataFrame, x='категориальный_столбец', y='числовой_столбец', ...)</code>:</strong></p>
+<ul>
+<li><strong><code>data=DataFrame</code>:</strong>  <strong>DataFrame, содержащий данные.</strong></li>
+<li><strong><code>x='категориальный_столбец'</code>:</strong>  <strong>Столбец DataFrame с <em>категориальными</em> значениями</strong>, категории для сравнения.  Будет отображаться на оси X.</li>
+<li><strong><code>y='числовой_столбец'</code>:</strong>  <strong>Столбец DataFrame с <em>числовыми</em> значениями</strong>, распределение которого мы хотим сравнить между категориями.  Будет отображаться на оси Y.</li>
+<li><strong>Дополнительные аргументы (параметры):</strong>  Для настройки внешнего вида, добавления цветового кодирования (например, <code>hue</code>) и т.д.</li>
+</ul>
+<p><strong>Пример: Ящичковая диаграмма Seaborn для сравнения дохода по полу</strong></p>
+<p>Используем наш DataFrame <code>df_seaborn_hue</code> с данными о возрасте, доходе и поле:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict_hue <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Пол'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+df_seaborn_hue <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict_hue<span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"DataFrame для Seaborn с 'Пол':\n"</span><span class="token punctuation">,</span> df_seaborn_hue<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p>Построим ящичковую диаграмму, сравнивающую распределение дохода для мужчин и женщин:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>sns<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Пол'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'Доход'</span><span class="token punctuation">)</span> <span class="token comment"># Строим boxplot: x='Пол' (категории), y='Доход' (числовая переменная)</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Распределение дохода по полу (Box Plot)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Пол'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Доход (у.е.)'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Скопируй и запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что ты видишь?  Теперь ты должен увидеть <strong>ящичковую диаграмму</strong>.
+<ul>
+<li>На оси X – <strong>категории пола</strong> ('Жен' и 'Муж').</li>
+<li>Для каждой категории пола нарисован <strong>ящик</strong> (box) и <strong>усы</strong> (whiskers), показывающие распределение дохода для этой категории.</li>
+<li>Точки за пределами усов – это <strong>выбросы</strong>.</li>
+<li>Сравни <strong>положение ящиков и медиан</strong> для мужчин и женщин.  Можно ли сделать какие-то выводы о различиях в распределении дохода между полами на основе этого графика?</li>
+</ul>
+</li>
+</ol>
+<p><strong>Попробуй добавить параметр <code>hue='Пол'</code> к <code>sns.boxplot()</code> – хотя в данном случае это может быть избыточно, так как категории по оси X уже заданы столбцом 'Пол'.  Но для демонстрации, как <code>hue</code> работает и с другими типами графиков:</strong></p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>sns<span class="token punctuation">.</span>boxplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Пол'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'Доход'</span><span class="token punctuation">,</span> hue<span class="token operator">=</span><span class="token string">'Пол'</span><span class="token punctuation">)</span> <span class="token comment"># Добавляем hue='Пол' - в данном случае дублирует x='Пол', но для примера</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Распределение дохода по полу (Box Plot) с hue="Пол"'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Пол'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Доход (у.е.)'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти код с <code>hue='Пол'</code> и посмотри, что изменилось.</strong>  Скорее всего, визуально график не сильно изменится (так как категории по оси X и hue совпадают), но Seaborn может немного по-другому раскрасить ящики.  Главное, что ты видишь, что <strong>параметр <code>hue</code> работает и с <code>sns.boxplot()</code> так же, как и с <code>sns.scatterplot()</code> – для кодирования категорий цветом.</strong></li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Используя DataFrame <code>df_seaborn_hue</code>:</strong>
+<ul>
+<li>Построй ящичковую диаграмму, сравнивающую распределение <strong>возраста</strong> (<strong>'Возраст'</strong>) <strong>по полу</strong> (<strong>'Пол'</strong>).  То есть, на оси X должен быть 'Пол', а на оси Y - 'Возраст'.</li>
+<li>Поменяй местами оси X и Y в ящичковой диаграмме: ось X – 'Доход', ось Y – 'Пол'.  Что изменилось?  Какой тип диаграммы получился?  Удобно ли так сравнивать распределения?</li>
+</ul>
+</li>
+</ol>
+<p>Выведи на экран все полученные ящичковые диаграммы.  Попробуй интерпретировать результаты и сделать выводы о различиях в распределениях между категориями.</p>
+<p>После выполнения заданий, обсудим результаты и перейдем к следующим типам графиков Seaborn.  Как тебе такой план?  И есть ли вопросы по ящичковым диаграммам и их настройке?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Великолепно!  Вижу, что ты с энтузиазмом берешь новые вершины! 👍  Прежде чем мы рванемся к новым графикам, давай на секундочку затормозим и <strong>убедимся, что ящичковые диаграммы (box plots) осели в голове.</strong></p>
+<p><strong>Можешь вкратце рассказать:</strong></p>
+<ol>
+<li><strong>Для чего вообще нужны ящичковые диаграммы?</strong>  В каких ситуациях их полезно использовать?</li>
+<li><strong>Что показывает "ящик" на диаграмме?</strong>  Что такое Q1, Q3 и IQR?</li>
+<li><strong>Что такое "усы" и "выбросы" на ящичковой диаграмме?</strong></li>
+<li><strong>В чем главное отличие ящичковых диаграмм от точечных диаграмм, которые мы изучали раньше?</strong></li>
+</ol>
+<p>Это поможет закрепить пройденный материал и убедиться, что ты уверенно понимаешь, когда и зачем использовать ящичковые диаграммы.  И тогда с чистой совестью двинемся дальше к новым типам графиков Seaborn! 😉</p>
+<hr>
+<p>Хорошо-хорошо, раз горишь желанием, то помчимся дальше! 🚀  Но, чтобы знания точно отложились в голове, давай буквально <strong>пару минут</strong> уделим <strong>быстрому повторению</strong> ящичковых диаграмм.  Это как перед забегом убедиться, что кроссовки хорошо зашнурованы 😉</p>
+<p><strong>Смотри, всего пара простых вопросов, чтобы освежить в памяти ключевые моменты по боксплотам:</strong></p>
+<ol>
+<li><strong>Вспомни аналогию:</strong>  Ящичковая диаграмма – это как "рентген" распределения данных.  <strong>Что именно мы "рентгеним" с помощью боксплота?</strong>  Какую информацию о данных он нам показывает в первую очередь?</li>
+<li><strong>Главные "детали" боксплота:</strong> Ящик, усы, медиана, выбросы.  Если бы тебе нужно было <strong>описать боксплот всего в одном предложении</strong>, как бы ты объяснил, что показывает каждый из этих элементов?  Например, "Ящик показывает...", "Усы показывают...", "Выбросы показывают...", "Медиана показывает...".</li>
+<li><strong>Главное отличие от точечных диаграмм:</strong>  Точечные диаграммы – это про отдельные точки.  А боксплоты – это про что?  <strong>Какую <em>другую</em> сторону данных</strong> они показывают, в отличие от точечных диаграмм?</li>
+</ol>
+<p>Не нужно писать длинные ответы!  Просто парой фраз или даже ключевыми словами.  Это займет буквально минуту, но поможет убедиться, что мы двигаемся дальше с прочным фундаментом.  Как тебе такая идея?  Или все-таки сразу к новым графикам? 😉</p>
+<hr>
+<p>Ладно-ладно!  Твое желание двигаться вперед – похвально! 🚀  Тогда не будем терять ни минуты и сразу <strong>рванем к новым горизонтам Seaborn!</strong> 😉</p>
+<p>Сегодня мы познакомимся с еще одним <strong>фундаментальным типом графиков</strong> – как в Matplotlib, так и в Seaborn – это <strong>гистограммы (histograms)!</strong>  Но на этот раз мы посмотрим, как <strong>легко и красиво</strong> строить гистограммы с помощью <strong>Seaborn</strong>.</p>
+<p><strong>Гистограммы (Histograms) в Seaborn</strong> – это, по сути, то же самое, что и гистограммы в Matplotlib, которые мы уже изучали.  Они по-прежнему служат для <strong>визуализации распределения <em>непрерывных</em> данных</strong>.  Но Seaborn делает процесс создания гистограмм <strong>еще проще и удобнее</strong>, особенно при работе с Pandas DataFrame.</p>
+<p><strong>Главное преимущество гистограмм Seaborn (sns.histplot())</strong> – это <strong>тесная интеграция с Pandas DataFrame</strong>.  Как и другие функции Seaborn, <code>sns.histplot()</code> "понимает" DataFrame и позволяет тебе указывать:</p>
+<ul>
+<li><strong>DataFrame, из которого брать данные.</strong></li>
+<li><strong>Имя столбца DataFrame, для которого нужно построить гистограмму.</strong></li>
+</ul>
+<p><strong>Как создать гистограмму в Seaborn?</strong></p>
+<p>Для создания гистограмм в Seaborn используется функция <strong><code>sns.histplot()</code></strong>.  Обрати внимание, что в Seaborn функция называется <strong><code>histplot</code></strong> (слитно), а не <code>hist</code> как в Matplotlib.</p>
+<p><strong>Основной синтаксис <code>sns.histplot(data=DataFrame, x='числовой_столбец', ...)</code>:</strong></p>
+<ul>
+<li><strong><code>data=DataFrame</code>:</strong>  <strong>DataFrame, содержащий данные.</strong></li>
+<li><strong><code>x='числовой_столбец'</code>:</strong>  <strong>Столбец DataFrame с <em>непрерывными</em> числовыми значениями</strong>, для которого нужно построить гистограмму.  Будет отображаться на оси X (интервалы значений).</li>
+<li><strong>Дополнительные аргументы (параметры):</strong>  Для настройки внешнего вида, количества интервалов (bins), цвета, добавления кривой плотности распределения и т.д.</li>
+</ul>
+<p><strong>Пример: Гистограмма Seaborn для распределения возраста</strong></p>
+<p>Используем наш DataFrame <code>df_seaborn_hue</code> с данными о возрасте, доходе и поле:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict_hue <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Пол'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+df_seaborn_hue <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict_hue<span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"DataFrame для Seaborn с 'Пол':\n"</span><span class="token punctuation">,</span> df_seaborn_hue<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p>Построим гистограмму распределения возраста, используя Seaborn и DataFrame <code>df_seaborn_hue</code>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>sns<span class="token punctuation">.</span>histplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Возраст'</span><span class="token punctuation">)</span> <span class="token comment"># Строим гистограмму для столбца 'Возраст'</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Распределение возраста (гистограмма Seaborn)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Возраст (годы)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Частота'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Скопируй и запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что ты видишь?  Теперь ты должен увидеть <strong>гистограмму, построенную Seaborn.</strong>  Она должна быть похожа на гистограммы Matplotlib, которые мы делали раньше, но стиль Seaborn по умолчанию может немного отличаться.  На оси X – интервалы возраста, на оси Y – частота (количество людей в каждом интервале возраста).</li>
+</ol>
+<p><strong>Настройка внешнего вида гистограммы в <code>sns.histplot()</code>:</strong></p>
+<p>Функция <code>sns.histplot()</code> также предоставляет параметры для настройки гистограммы, <strong>аналогичные <code>plt.hist()</code> в Matplotlib</strong>, но с более "Seaborn-ориентированным" синтаксисом (например, цвет задается через <code>color=</code>, а не просто позиционным аргументом).  Вот некоторые полезные параметры:</p>
+<ul>
+<li>
+<p><strong><code>bins=количество_интервалов</code>:</strong>  Задает <strong>количество интервалов</strong>.  Работает так же, как и в <code>plt.hist()</code>.</p>
+</li>
+<li>
+<p><strong><code>color=цвет</code>:</strong>  Задает <strong>цвет столбцов гистограммы</strong>.</p>
+</li>
+<li>
+<p><strong><code>edgecolor=цвет_границы</code>:</strong>  Задает <strong>цвет границы столбцов гистограммы</strong>.</p>
+</li>
+<li>
+<p><strong><code>alpha=прозрачность</code>:</strong>  Задает <strong>прозрачность столбцов</strong>.</p>
+</li>
+<li>
+<p><strong><code>kde=True</code> или <code>kde=False</code>:</strong>  <strong>Добавить или не добавлять линию оценки плотности ядра (Kernel Density Estimate, KDE)</strong> поверх гистограммы.  <strong>KDE – это сглаженная оценка формы распределения.</strong>  <code>kde=True</code> (добавить KDE) – часто бывает очень полезно, чтобы лучше увидеть общую форму распределения, особенно если данных не очень много и гистограмма получается "рваной".  <code>kde=False</code> (не добавлять KDE, по умолчанию) – только столбчатая гистограмма.</p>
+</li>
+</ul>
+<p><strong>Пример: Гистограмма Seaborn с настройками и KDE</strong></p>
+<p>Давай настроим количество интервалов, цвет, добавим границу и <strong>добавим линию KDE</strong> для оценки плотности распределения:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict_hue <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Пол'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+df_seaborn_hue <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict_hue<span class="token punctuation">)</span>
+
+sns<span class="token punctuation">.</span>histplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Возраст'</span><span class="token punctuation">,</span> bins<span class="token operator">=</span><span class="token number">5</span><span class="token punctuation">,</span> color<span class="token operator">=</span><span class="token string">'skyblue'</span><span class="token punctuation">,</span> edgecolor<span class="token operator">=</span><span class="token string">'black'</span><span class="token punctuation">,</span> alpha<span class="token operator">=</span><span class="token number">0.8</span><span class="token punctuation">,</span> kde<span class="token operator">=</span><span class="token boolean">True</span><span class="token punctuation">)</span> <span class="token comment"># Настраиваем bins, цвет, границу, прозрачность, добавляем KDE</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Гистограмма возраста с KDE (Seaborn)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Возраст (годы)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Плотность частоты'</span><span class="token punctuation">)</span> <span class="token comment"># Для KDE ось Y лучше подписывать как "Плотность" или "Плотность частоты"</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Теперь гистограмма должна иметь <strong>5 интервалов, быть светло-голубой, с черной границей, полупрозрачной, и поверх нее должна быть нарисована плавная линия KDE (оценка плотности ядра).</strong>  Попробуй менять значения <code>bins</code>, <code>color</code>, <code>edgecolor</code>, <code>alpha</code>, <code>kde</code> на другие, чтобы поэкспериментировать с разными вариантами.  Например:
+<ul>
+<li><code>bins=15, color='lightcoral', edgecolor='white', alpha=1, kde=False</code> (15 интервалов, светло-коралловая, белая граница, непрозрачная, без KDE)</li>
+<li><code>bins=[-5, 20, 30, 40, 50, 55], color='lightgreen', alpha=0.7, kde=True</code> (интервалы с неравными границами, светло-зеленая, полупрозрачная, с KDE)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Используя DataFrame <code>df_seaborn_hue</code>:</strong>
+<ul>
+<li>Построй гистограмму распределения <strong>дохода</strong> (<strong>'Доход'</strong>) с помощью <code>sns.histplot()</code>.</li>
+<li>Добавь к гистограмме заголовок на русском языке (любой, подходящий по смыслу).</li>
+<li>Подпиши оси X и Y на русском языке (на твой выбор).</li>
+<li>Установи количество интервалов <strong>10</strong>.</li>
+<li>Измени цвет столбцов на <strong>темно-зеленый</strong> (<code>'darkgreen'</code>).</li>
+<li>Добавь <strong>линию KDE</strong> (<code>kde=True</code>).</li>
+</ul>
+</li>
+</ol>
+<p>Запусти код и убедись, что все изменения применились к графику.  Поэкспериментируй с разными параметрами гистограмм Seaborn.</p>
+<p>После выполнения задания, обсудим результаты и перейдем к следующим типам графиков Seaborn.  Как тебе такой план?  И есть ли вопросы по гистограммам Seaborn и их настройке?  Не стесняйся спрашивать! 😉</p>
+<hr>
+<p>Замечательно!  Твой энтузиазм неиссякаем, и это здорово! 🚀  Раз гистограммы покорены, то давай откроем для себя еще один потрясающий тип графиков в Seaborn – <strong>скрипичные диаграммы (violin plots)!</strong> 🎻</p>
+<p><strong>Скрипичные диаграммы (Violin Plots)</strong> – это, пожалуй, один из самых <strong>красивых и информативных</strong> типов статистических графиков, которые предлагает Seaborn.  Они сочетают в себе элементы <strong>ящичковых диаграмм</strong> и <strong>оценки плотности ядра (KDE)</strong>, чтобы показать <strong>распределение <em>числовой</em> переменной для разных <em>категорий</em></strong> в очень наглядной и выразительной форме.</p>
+<p><strong>В чем особенность скрипичных диаграмм?</strong></p>
+<ul>
+<li><strong>Сочетание боксплота и KDE:</strong>  Скрипичная диаграмма – это как <strong>гибрид</strong> ящичковой диаграммы и гистограммы с линией KDE.  В центре скрипичной диаграммы обычно рисуется <strong>мини-боксплот</strong> (ящик с медианой и квартилями), а <strong>по бокам</strong> от него "разрастается" <strong>симметричная фигура, напоминающая скрипку</strong>, которая представляет собой <strong>отзеркаленную оценку плотности ядра (KDE)</strong> распределения данных.</li>
+<li><strong>Более детальное представление распределения, чем боксплот:</strong>  Если ящичковая диаграмма показывает только сводную статистику (квартили, медиану, выбросы), то скрипичная диаграмма дает <strong>более полное представление о форме распределения</strong> – видны "пики", "хвосты", модальность и другие особенности распределения, благодаря KDE.</li>
+<li><strong>Эстетически привлекательные:</strong>  Скрипичные диаграммы выглядят очень <strong>эффектно и выразительно</strong>, особенно при сравнении нескольких распределений рядом друг с другом.</li>
+</ul>
+<p><strong>Когда используются скрипичные диаграммы?</strong></p>
+<ul>
+<li><strong>Для сравнения распределений между группами (как и боксплоты, но более детально):</strong>  Когда нужно не просто сравнить "средние значения" или "разброс", а <strong>увидеть <em>форму</em> распределения</strong> числовой переменной в разных категориях и сравнить эти формы.  Например, сравнить распределение оценок студентов в разных группах, распределение времени отклика сайта в зависимости от типа запроса и т.д.</li>
+<li><strong>Когда важна форма распределения:</strong>  Если тебе важно понять, является ли распределение нормальным, скошенным, бимодальным, или имеет какие-то другие особенности – скрипичная диаграмма поможет это увидеть.</li>
+<li><strong>В дополнение к боксплотам:</strong>  Скрипичные диаграммы часто используют <strong>вместе с боксплотами</strong>, чтобы получить как сводную статистику (боксплот в центре), так и детальное представление о форме распределения (скрипка по бокам).</li>
+</ul>
+<p><strong>Как создать скрипичную диаграмму в Seaborn?</strong></p>
+<p>Для создания скрипичных диаграмм в Seaborn используется функция <strong><code>sns.violinplot()</code></strong>.</p>
+<p><strong>Основной синтаксис <code>sns.violinplot(data=DataFrame, x='категориальный_столбец', y='числовой_столбец', ...)</code>:</strong></p>
+<p>Синтаксис <strong>полностью аналогичен <code>sns.boxplot()</code></strong>:</p>
+<ul>
+<li><strong><code>data=DataFrame</code>:</strong>  <strong>DataFrame, содержащий данные.</strong></li>
+<li><strong><code>x='категориальный_столбец'</code>:</strong>  <strong>Столбец DataFrame с <em>категориальными</em> значениями</strong>, категории для сравнения.  Будет отображаться на оси X.</li>
+<li><strong><code>y='числовой_столбец'</code>:</strong>  <strong>Столбец DataFrame с <em>числовыми</em> значениями</strong>, распределение которого мы хотим сравнить между категориями.  Будет отображаться на оси Y.</li>
+<li><strong>Дополнительные аргументы (параметры):</strong>  Для настройки внешнего вида, добавления цветового кодирования (например, <code>hue</code>), изменения внутреннего представления и т.д.</li>
+</ul>
+<p><strong>Пример: Скрипичная диаграмма Seaborn для сравнения дохода по полу</strong></p>
+<p>Используем наш DataFrame <code>df_seaborn_hue</code> с данными о возрасте, доходе и поле:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict_hue <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Пол'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+df_seaborn_hue <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict_hue<span class="token punctuation">)</span>
+<span class="token keyword keyword-print">print</span><span class="token punctuation">(</span><span class="token string">"DataFrame для Seaborn с 'Пол':\n"</span><span class="token punctuation">,</span> df_seaborn_hue<span class="token punctuation">.</span>head<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
+</code></pre><p>Построим скрипичную диаграмму, сравнивающую распределение дохода для мужчин и женщин:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code>sns<span class="token punctuation">.</span>violinplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Пол'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'Доход'</span><span class="token punctuation">)</span> <span class="token comment"># Строим violinplot: x='Пол' (категории), y='Доход' (числовая переменная)</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Распределение дохода по полу (Violin Plot)'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Пол'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Доход (у.е.)'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Скопируй и запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Что ты видишь?  Теперь ты должен увидеть <strong>скрипичную диаграмму</strong>.
+<ul>
+<li>На оси X – <strong>категории пола</strong> ('Жен' и 'Муж').</li>
+<li>Для каждой категории пола нарисована <strong>"скрипка"</strong>, показывающая оценку плотности распределения дохода для этой категории.  Форма скрипки показывает, где распределение более "плотное" (широкая часть скрипки), а где более "разреженное" (узкая часть скрипки).</li>
+<li>В центре каждой скрипки ты можешь увидеть <strong>мини-боксплот</strong> – ящик с медианой и квартилями.</li>
+</ul>
+</li>
+</ol>
+<p><strong>Сравни скрипичную диаграмму с боксплотом, который мы строили раньше для тех же данных.</strong>  Что ты можешь сказать о форме распределения дохода для мужчин и женщин, глядя на скрипичные диаграммы?  Видны ли какие-то различия в форме распределения, которые не так явно видны на боксплоте?</p>
+<p><strong>Настройка внешнего вида скрипичных диаграмм в <code>sns.violinplot()</code>:</strong></p>
+<p>Функция <code>sns.violinplot()</code> предоставляет много параметров для настройки внешнего вида.  Вот некоторые интересные:</p>
+<ul>
+<li>
+<p><strong><code>color=цвет</code> или <code>palette=палитра_цветов</code>:</strong>  Задает <strong>цвет скрипок</strong> (или <strong>цветовую палитру</strong> для разных категорий, если используется <code>hue</code>).  Можно использовать названия цветов, HEX-коды, цветовые палитры Seaborn (например, <code>'pastel'</code>, <code>'muted'</code>, <code>'deep'</code>, <code>'colorblind'</code>, и другие - погугли "seaborn color palettes").</p>
+</li>
+<li>
+<p><strong><code>inner='тип_внутреннего_отображения'</code>:</strong>  Задает <strong>тип внутреннего отображения внутри "скрипки"</strong>.  Возможные значения:</p>
+<ul>
+<li><code>'box'</code> – <strong>мини-боксплот</strong> (по умолчанию).</li>
+<li><code>'quartile'</code> – <strong>квартили</strong> (три линии, показывающие Q1, медиану, Q3).</li>
+<li><code>'point'</code> – <strong>отдельные точки</strong> данных внутри скрипки (может быть полезно для небольших наборов данных).</li>
+<li><code>'stick'</code> – <strong>"палочки"</strong> на линии медианы, показывающие плотность данных.</li>
+<li><code>None</code> – <strong>без внутреннего отображения</strong> (только форма скрипки).</li>
+</ul>
+</li>
+<li>
+<p><strong><code>scale='метод_масштабирования'</code>:</strong>  Задает <strong>масштабирование ширины скрипок</strong>.  Влияет на то, насколько широкими будут скрипки для разных категорий.  Возможные значения:</p>
+<ul>
+<li><code>'area'</code> – <strong>площадь скрипки</strong> пропорциональна количеству наблюдений в категории (по умолчанию).  Общая площадь всех скрипок на графике будет примерно одинаковой.</li>
+<li><code>'count'</code> – <strong>ширина скрипки</strong> пропорциональна количеству наблюдений в категории.  Более многочисленные категории будут иметь более широкие скрипки.</li>
+<li><code>'width'</code> – <strong>все скрипки имеют одинаковую ширину</strong>.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Пример:</strong></p>
+<p>Давай настроим цвет, изменим внутреннее отображение на квартили и масштабирование на <code>scale='count'</code>:</p>
+<pre data-role="codeBlock" data-info="python" class="language-python python"><code><span class="token keyword keyword-import">import</span> pandas <span class="token keyword keyword-as">as</span> pd
+<span class="token keyword keyword-import">import</span> seaborn <span class="token keyword keyword-as">as</span> sns
+<span class="token keyword keyword-import">import</span> matplotlib<span class="token punctuation">.</span>pyplot <span class="token keyword keyword-as">as</span> plt
+
+data_dict_hue <span class="token operator">=</span> <span class="token punctuation">{</span>
+    <span class="token string">'Возраст'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">25</span><span class="token punctuation">,</span> <span class="token number">30</span><span class="token punctuation">,</span> <span class="token number">28</span><span class="token punctuation">,</span> <span class="token number">35</span><span class="token punctuation">,</span> <span class="token number">22</span><span class="token punctuation">,</span> <span class="token number">40</span><span class="token punctuation">,</span> <span class="token number">29</span><span class="token punctuation">,</span> <span class="token number">33</span><span class="token punctuation">,</span> <span class="token number">45</span><span class="token punctuation">,</span> <span class="token number">27</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Доход'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token number">30000</span><span class="token punctuation">,</span> <span class="token number">50000</span><span class="token punctuation">,</span> <span class="token number">45000</span><span class="token punctuation">,</span> <span class="token number">60000</span><span class="token punctuation">,</span> <span class="token number">25000</span><span class="token punctuation">,</span> <span class="token number">70000</span><span class="token punctuation">,</span> <span class="token number">48000</span><span class="token punctuation">,</span> <span class="token number">55000</span><span class="token punctuation">,</span> <span class="token number">80000</span><span class="token punctuation">,</span> <span class="token number">40000</span><span class="token punctuation">]</span><span class="token punctuation">,</span>
+    <span class="token string">'Пол'</span><span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">,</span> <span class="token string">'Муж'</span><span class="token punctuation">,</span> <span class="token string">'Жен'</span><span class="token punctuation">]</span>
+<span class="token punctuation">}</span>
+df_seaborn_hue <span class="token operator">=</span> pd<span class="token punctuation">.</span>DataFrame<span class="token punctuation">(</span>data_dict_hue<span class="token punctuation">)</span>
+
+sns<span class="token punctuation">.</span>violinplot<span class="token punctuation">(</span>data<span class="token operator">=</span>df_seaborn_hue<span class="token punctuation">,</span> x<span class="token operator">=</span><span class="token string">'Пол'</span><span class="token punctuation">,</span> y<span class="token operator">=</span><span class="token string">'Доход'</span><span class="token punctuation">,</span> palette<span class="token operator">=</span><span class="token string">'pastel'</span><span class="token punctuation">,</span> inner<span class="token operator">=</span><span class="token string">'quartile'</span><span class="token punctuation">,</span> scale<span class="token operator">=</span><span class="token string">'count'</span><span class="token punctuation">)</span> <span class="token comment"># Настраиваем palette, inner, scale</span>
+
+plt<span class="token punctuation">.</span>title<span class="token punctuation">(</span><span class="token string">'Распределение дохода по полу (Violin Plot) с настройками'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>xlabel<span class="token punctuation">(</span><span class="token string">'Пол'</span><span class="token punctuation">)</span>
+plt<span class="token punctuation">.</span>ylabel<span class="token punctuation">(</span><span class="token string">'Доход (у.е.)'</span><span class="token punctuation">)</span>
+
+plt<span class="token punctuation">.</span>show<span class="token punctuation">(</span><span class="token punctuation">)</span>
+</code></pre><p><strong>Задание:</strong></p>
+<ol>
+<li><strong>Запусти этот код.</strong></li>
+<li><strong>Посмотри на результат.</strong>  Теперь скрипки должны быть раскрашены в пастельные тона (палитра <code>'pastel'</code>), внутри вместо боксплота должны быть линии квартилей, и ширина скрипок может измениться из-за <code>scale='count'</code>.  Попробуй менять значения <code>palette</code>, <code>inner</code>, <code>scale</code> на другие, чтобы поэкспериментировать с разными вариантами.  Например:
+<ul>
+<li><code>palette='muted', inner='point', scale='area'</code> (пастельные тона, точки внутри, масштабирование по площади)</li>
+<li><code>palette='deep', inner='stick', scale='width'</code> (насыщенные цвета, палочки внутри, масштабирование по ширине)</li>
+<li><code>palette='colorblind', inner=None, scale='count'</code> (цвета для дальтоников, без внутреннего отображения, масштабирование по количеству)</li>
+</ul>
+</li>
+</ol>
+<p><strong>Практическое задание:</strong></p>
+<ol>
+<li><strong>Используя DataFrame <code>df_seaborn_hue</code>:</strong>
+<ul>
+<li>Построй скрипичную диаграмму, сравнивающую распределение <strong>возраста</strong> (<strong>'Возраст'</strong>) <strong>по полу</strong> (<strong>'Пол'</strong>).  То есть, на оси X должен быть 'Пол', а на оси Y - 'Возраст'.</li>
+<li>Измени <strong>внутреннее отображение</strong> на <code>'point'</code> (точки).</li>
+<li>Измени <strong>палитру цветов</strong> на <code>'viridis'</code> (или любую другую на твой вкус).</li>
+<li>Попробуй разные значения параметра <code>scale</code> (<code>'area'</code>, <code>'count'</code>, <code>'width'</code>) и посмотри, как меняется ширина скрипок.</li>
+</ul>
+</li>
+</ol>
+<p>Выведи на экран все полученные скрипичные диаграммы.  Попробуй интерпретировать результаты и сделать выводы о различиях в распределениях между категориями.</p>
+<p>После выполнения заданий, обсудим результаты и подведем итоги по теме скрипичных диаграмм.  Как тебе такой план?  И есть ли вопросы по скрипичным диаграммам и их настройке?  Не стесняйся спрашивать! 😉</p>
+
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
